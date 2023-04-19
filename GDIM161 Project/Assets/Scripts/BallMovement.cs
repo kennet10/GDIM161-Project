@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BallMovement : MonoBehaviour
 {
-    public float speed = 10f; // Speed of the ball
+    public float speed = 25f; // Speed of the ball
     public float maxTiltAngle = 30f; // Maximum tilt angle of the table
     public Transform tableTransform; // Reference to the table transform
     private Rigidbody rb; // Reference to the ball rigidbody
