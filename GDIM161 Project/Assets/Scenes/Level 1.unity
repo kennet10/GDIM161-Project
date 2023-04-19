@@ -5739,8 +5739,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   maxSpeed: 10
-  acceleration: 4
-  deceleration: 0.008
+  acceleration: 7
+  deceleration: 0.007
 --- !u!1 &339844001
 GameObject:
   m_ObjectHideFlags: 0
