@@ -9,6 +9,23 @@ public class TableController : MonoBehaviour
     private float currentTiltAngleX = 0f;
     private float currentTiltAngleZ = 0f;
 
+    // Add an AudioSource component to the game object and assign an audio clip to it in the inspector
+    private AudioSource audioSource;
+
+    // Assign the audio clip to the audio source in the Start() method
+    [SerializeField] private AudioClip audioClip;
+
+    private bool isTableTilted = false;
+
+    private void Start()
+    {
+        // Get the AudioSource component
+        audioSource = GetComponent<AudioSource>();
+
+        // Assign the audio clip to the audio source
+        audioSource.clip = audioClip;
+    }
+
     private void Update()
     {
         // Get input for tilting the table
@@ -34,5 +51,20 @@ public class TableController : MonoBehaviour
 
         // Set the rotation of the table based on the tilt angles
         transform.rotation = Quaternion.Euler(currentTiltAngleX, 0f, currentTiltAngleZ);
+
+        // Check if the table is tilted
+        if ((tiltX != 0f || tiltZ != 0f) && !isTableTilted)
+        {
+            // Play the audio clip if it's not already playing
+            audioSource.PlayOneShot(audioClip);
+
+            // Set the flag to true so the audio clip doesn't play again until the table is tilted again
+            isTableTilted = true;
+        }
+        else if (tiltX == 0f && tiltZ == 0f)
+        {
+            // Reset the flag when the table is back to the straight position
+            isTableTilted = false;
+        }
     }
 }
