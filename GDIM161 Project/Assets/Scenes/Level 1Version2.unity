@@ -4034,7 +4034,7 @@ ParticleSystem:
           outWeight: 0
         - serializedVersion: 3
           time: 1
-          value: 1
+          value: 0.63513565
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -4078,21 +4078,21 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
+          value: 0.4594555
+          inSlope: -0.4594555
+          outSlope: -0.4594555
+          tangentMode: 34
           weightedMode: 0
           inWeight: 0
-          outWeight: 0
+          outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
           value: 0
-          inSlope: -2
-          outSlope: -2
-          tangentMode: 0
+          inSlope: -0.4594555
+          outSlope: -0.4594555
+          tangentMode: 34
           weightedMode: 0
-          inWeight: 0
+          inWeight: 0.33333334
           outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -5284,7 +5284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: bd49cf222d13dc24a9dbb351a926c071, type: 2}
+  sharedProfile: {fileID: 11400000, guid: fe2ad2d8e284b6d46986ba7bd0cb5cb1, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
@@ -6317,7 +6317,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 74aec4606952f4af1ba8d3c7d9581b43, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.294
+  m_Volume: 0.213
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6929,7 +6929,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 26fdb4a74311b7f49bdb3e333c16a50e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.217
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8709,6 +8709,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250631957}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1278557591
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1913396082}
+    m_Modifications:
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 102.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 102.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 102.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -125.06827
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -102.89794
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 199.82439
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.3552031
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000007763224
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9347892
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000002043046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 138.388
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463280832204740952, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+      propertyPath: m_Name
+      value: Halloween_VoodooDoll
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
 --- !u!1 &1280241624
 GameObject:
   m_ObjectHideFlags: 0
@@ -10417,6 +10490,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4856146082550060, guid: 0c74bed2ad49fad4d94fca86441ad49f, type: 3}
   m_PrefabInstance: {fileID: 1105381731}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1833277548 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4655218243663021026, guid: 2d58e130c8cd85546bdb13956f3bb960, type: 3}
+  m_PrefabInstance: {fileID: 1278557591}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1840012810
 GameObject:
   m_ObjectHideFlags: 0
@@ -10529,7 +10607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1913396082}
   m_Layer: 0
-  m_Name: Zombie
+  m_Name: Decoration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10553,6 +10631,7 @@ Transform:
   - {fileID: 1827153287}
   - {fileID: 382557374}
   - {fileID: 1841318654}
+  - {fileID: 1833277548}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
