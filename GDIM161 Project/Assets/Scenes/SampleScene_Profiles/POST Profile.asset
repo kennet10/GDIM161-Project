@@ -167,10 +167,10 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.226
+    value: 0.382
   smoothness:
     overrideState: 1
-    value: 0.578
+    value: 0.534
   roundness:
     overrideState: 0
     value: 1
@@ -288,13 +288,13 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 1
-    value: {x: 0.9889203, y: 0.88991886, z: 1, w: 0}
+    value: {x: 0.9773668, y: 1, z: 0.9904461, w: 0.023668632}
   gamma:
     overrideState: 1
-    value: {x: 0.95221454, y: 0.9572292, z: 1, w: 0}
+    value: {x: 1, y: 0.7161279, z: 0.6858382, w: -0.0000000015430197}
   gain:
     overrideState: 1
-    value: {x: 0.82043505, y: 1, z: 0.8591574, w: 0}
+    value: {x: 1, y: 0.8521026, z: 0.915342, w: -0.08622134}
   masterCurve:
     overrideState: 0
     value:
