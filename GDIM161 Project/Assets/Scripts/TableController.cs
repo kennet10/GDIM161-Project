@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class TableController : MonoBehaviour
 {
-    [SerializeField] private float maxTiltAngle = 30f;
+    [SerializeField] private float maxTiltAngle = 10f;
     [SerializeField] private float tiltSpeed = 10f;
-    [SerializeField] private float returnSpeed = 5f;
+    [SerializeField] private float returnSpeed = 1f;
 
     private float currentTiltAngleX = 0f;
     private float currentTiltAngleZ = 0f;
