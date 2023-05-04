@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Skull
   - Ball
+  - Spotlight
   layers:
   - Default
   - TransparentFX
