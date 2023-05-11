@@ -11,6 +11,8 @@ public class BallController : MonoBehaviour
 
     private Rigidbody rb;
 
+    public bool disabled = false;
+
     // Event that other scripts can subscribe to in order to get the ball's speed
     public delegate void SpeedChanged(float speed);
     public static event SpeedChanged OnSpeedChanged;
@@ -22,26 +24,39 @@ public class BallController : MonoBehaviour
 
     void FixedUpdate()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(horizontal, 0.0f, vertical);
-
-        rb.AddForce(movement * acceleration);
-
-        // Limit the speed of the ball
-        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
-
-        // Slow down the ball if there is no input
-        if (horizontal == 0 && vertical == 0)
+        if (!disabled)
         {
-            rb.velocity = Vector3.MoveTowards(rb.velocity, Vector3.zero, deceleration);
-        }
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
 
-        // Broadcast the current speed of the ball
-        if (OnSpeedChanged != null)
-        {
-            OnSpeedChanged(rb.velocity.magnitude);
+            Vector3 movement = new Vector3(horizontal, 0.0f, vertical);
+
+            rb.AddForce(movement * acceleration);
+
+            // Limit the speed of the ball
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+
+            // Slow down the ball if there is no input
+            if (horizontal == 0 && vertical == 0)
+            {
+                rb.velocity = Vector3.MoveTowards(rb.velocity, Vector3.zero, deceleration);
+            }
+
+            // Broadcast the current speed of the ball
+            if (OnSpeedChanged != null)
+            {
+                OnSpeedChanged(rb.velocity.magnitude);
+            }
         }
+    }
+
+    public void PauseMovement()
+    {
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+    }
+
+    public void ResumeMovement()
+    {
+        rb.constraints = RigidbodyConstraints.None;
     }
 }
