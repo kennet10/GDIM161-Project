@@ -13,6 +13,8 @@ public class BallController : MonoBehaviour
 
     public bool disabled = false;
 
+    public Rigidbody handRigidbody; // add this line
+
     // Event that other scripts can subscribe to in order to get the ball's speed
     public delegate void SpeedChanged(float speed);
     public static event SpeedChanged OnSpeedChanged;
@@ -47,6 +49,14 @@ public class BallController : MonoBehaviour
             {
                 OnSpeedChanged(rb.velocity.magnitude);
             }
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "TriggerAreaFallDown") // replace with your trigger GameObject's name
+        {
+            handRigidbody.isKinematic = false;
         }
     }
 

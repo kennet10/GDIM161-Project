@@ -7,6 +7,8 @@ TagManager:
   - Skull
   - Ball
   - Spotlight
+  - TableGame
+  - TriggerHand
   layers:
   - Default
   - TransparentFX
