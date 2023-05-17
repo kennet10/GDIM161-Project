@@ -6,21 +6,11 @@ public class BallTeleport : MonoBehaviour
 {
 
     public BallController ballController;
-    public GameObject otherTeleporter;
+    public BallTeleport otherTeleporter;
+    public GameObject VFX;
 
     public bool onCooldown = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -40,13 +30,17 @@ public class BallTeleport : MonoBehaviour
     {
         ballController.disabled = true;
         ballController.PauseMovement();
+        VFX.SetActive(true);
 
         yield return new WaitForSeconds(0.5f);
         ballController.gameObject.transform.position = otherTeleporter.transform.position;
+        otherTeleporter.VFX.SetActive(true);
         yield return new WaitForSeconds(0.5f);
 
         ballController.disabled = false;
         ballController.ResumeMovement();
+        VFX.SetActive(false);
+        otherTeleporter.VFX.SetActive(false);
     }
 
     
