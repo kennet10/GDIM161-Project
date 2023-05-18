@@ -9,6 +9,10 @@ TagManager:
   - Spotlight
   - TableGame
   - TriggerHand
+  - Table
+  - Teleporter
+  - TAZOFX
+  - Scary Mask
   layers:
   - Default
   - TransparentFX

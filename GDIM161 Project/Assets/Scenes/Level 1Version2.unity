@@ -5805,6 +5805,8 @@ MonoBehaviour:
   maxSpeed: 10
   acceleration: 7
   deceleration: 0.007
+  disabled: 0
+  handRigidbody: {fileID: 0}
 --- !u!114 &280154173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12152,8 +12154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 280154165}
   smoothTime: 0.5
-  maxDistance: 10
-  minDistance: 5
+  maxDistance: 30
+  minDistance: 8
 --- !u!114 &1810875786
 MonoBehaviour:
   m_ObjectHideFlags: 0
