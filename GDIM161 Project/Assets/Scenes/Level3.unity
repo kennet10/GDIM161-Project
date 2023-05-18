@@ -11170,7 +11170,7 @@ GameObject:
   - component: {fileID: 1168120493}
   - component: {fileID: 1168120494}
   m_Layer: 0
-  m_Name: Holes
+  m_Name: teleporters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13245,7 +13245,7 @@ GameObject:
   - component: {fileID: 1489830251}
   - component: {fileID: 1489830254}
   m_Layer: 0
-  m_Name: testPit
+  m_Name: test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15499,7 +15499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1872218115}
   m_Layer: 0
-  m_Name: none
+  m_Name: none_vfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

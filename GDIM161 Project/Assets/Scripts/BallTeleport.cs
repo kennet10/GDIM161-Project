@@ -40,7 +40,9 @@ public class BallTeleport : MonoBehaviour
         ballController.disabled = false;
         ballController.ResumeMovement();
         VFX.SetActive(false);
-        otherTeleporter.VFX.SetActive(false);
+        
+        // uncomment to make object invisible after use
+        //otherTeleporter.VFX.SetActive(false);
     }
 
     
