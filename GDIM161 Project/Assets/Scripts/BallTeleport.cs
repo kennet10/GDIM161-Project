@@ -30,17 +30,13 @@ public class BallTeleport : MonoBehaviour
     {
         ballController.disabled = true;
         ballController.PauseMovement();
-        VFX.SetActive(true);
 
         yield return new WaitForSeconds(0.5f);
         ballController.gameObject.transform.position = otherTeleporter.transform.position;
-        otherTeleporter.VFX.SetActive(true);
         yield return new WaitForSeconds(0.5f);
 
         ballController.disabled = false;
         ballController.ResumeMovement();
-        VFX.SetActive(false);
-        otherTeleporter.VFX.SetActive(false);
     }
 
     
