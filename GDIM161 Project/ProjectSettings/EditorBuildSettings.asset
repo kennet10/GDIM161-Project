@@ -18,6 +18,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3.unity
     guid: 20f61bcea3f97984989ae58f9db55219
   - enabled: 1
-    path: Assets/Scenes/LoadingScreen.unity
+    path: Assets/Scenes/EndingScreen.unity
     guid: 372f96d13fbdc834f9ad6a4acf9ed14f
   m_configObjects: {}
