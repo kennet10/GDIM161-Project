@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BallTeleport : MonoBehaviour
 {
 
     public BallController ballController;
     public BallTeleport otherTeleporter;
-    public GameObject VFX;
+    public Animator animator;
 
     public bool onCooldown = false;
 
@@ -30,11 +31,13 @@ public class BallTeleport : MonoBehaviour
     {
         ballController.disabled = true;
         ballController.PauseMovement();
+        animator.SetTrigger("Start");
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         ballController.gameObject.transform.position = otherTeleporter.transform.position;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
+        animator.SetTrigger("End");
         ballController.disabled = false;
         ballController.ResumeMovement();
     }

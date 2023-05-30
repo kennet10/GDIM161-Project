@@ -11,6 +11,6 @@ public class RealTimeDisplay : MonoBehaviour
         string currentTime = System.DateTime.Now.ToString("hh:mm:ss tt");
 
         // Update the text on the UI with the current time
-        realTimeText.text = "Time: " + currentTime;
+        realTimeText.text = currentTime;
     }
 }

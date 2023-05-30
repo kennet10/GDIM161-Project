@@ -6,7 +6,7 @@ public class Light : MonoBehaviour
 {
     void Update()
     {
-        if (Random.value > 0.9) //a random chance
+        if (Random.value > 0.95) //a random chance
         {
             if (GetComponent<UnityEngine.Light>().enabled == true) //if the light is on...
             {
