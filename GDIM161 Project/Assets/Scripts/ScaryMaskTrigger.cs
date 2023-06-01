@@ -5,6 +5,7 @@ public class ScaryMaskTrigger : MonoBehaviour
 {
     public GameObject scaryMask; // Attach your ScaryMask object here in the inspector
     public float displayTime = 1f; // Duration for which the mask stays visible
+    public Animator maskAnimator; // Reference to the Animator component of the mask object
 
     private AudioSource scarySound; // To play sound effect
 
@@ -27,7 +28,7 @@ public class ScaryMaskTrigger : MonoBehaviour
 
     IEnumerator ShowScaryMask()
     {
-        scaryMask.SetActive(true); // Make the mask visible
+        maskAnimator.SetTrigger("ShowMask"); // Trigger the animation
         scarySound.Play(); // Play the scary sound
 
         // Wait for displayTime seconds

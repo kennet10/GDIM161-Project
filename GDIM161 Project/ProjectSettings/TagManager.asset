@@ -13,6 +13,9 @@ TagManager:
   - Teleporter
   - TAZOFX
   - Scary Mask
+  - enemy
+  - Ground
+  - ShowMask
   layers:
   - Default
   - TransparentFX
