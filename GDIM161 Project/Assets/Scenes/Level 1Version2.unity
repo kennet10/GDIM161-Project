@@ -8948,7 +8948,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1001001837
 Transform:
   m_ObjectHideFlags: 0
@@ -12478,7 +12478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 280154165}
   smoothTime: 0.5
-  maxDistance: 30
+  maxDistance: 15
   minDistance: 8
 --- !u!114 &1810875786
 MonoBehaviour:

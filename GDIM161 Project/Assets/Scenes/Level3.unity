@@ -20831,7 +20831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 280154165}
   smoothTime: 0.5
-  maxDistance: 30
+  maxDistance: 15
   minDistance: 8
 --- !u!114 &1810875786
 MonoBehaviour:
