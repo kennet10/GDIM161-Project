@@ -26,13 +26,13 @@ public class LevelLoader : MonoBehaviour
         // Load Level 4 with the '4' key
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            LoadLevel("Level4 (Kenneth)");
+            LoadLevel("Level4 (Cam)");
         }
 
         // Load Level 5 with the '5' key
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            LoadLevel("Level5 (Cam)");
+            LoadLevel("Level5 (Kenneth)");
         }
 
         // Quit the game with the 'L' key
