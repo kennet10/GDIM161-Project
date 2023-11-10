@@ -1,6 +1,17 @@
 # Marble Maze Madness
+An 8 week project for GDIM 161 at UCI,
+##Controls
 
-Marble Maze Madness takes the childhood marble tilting game and puts a horror twist on it. Guide your marble through the spooky-fied labyrinth and see what awaits...
+- W to go forward
+- A to go left
+- S to move backwards
+- D to move right
 
-Controls: 
-WASD to move
+##Contributors
+
+- Kenneth Tang - Programmer, Level Designer
+- Alexander Voit - Programmer, Level Designer, Audio Designer
+- Campbell Harper Lee - Programmer, Level Designer
+- Thao Nguyen - Programmer
+- Clayton Sinclair IV - Programmer
+- Christian Simbolon - Programmer
